@@ -27,7 +27,7 @@ def chat_id_from_file():
     result = f.read().splitlines()
     return result[0]
 
-TOKEN = str(tocken_from_file) 
+TOKEN = str(tocken_from_file()) 
 CHAT_ID = str(chat_id_from_file()) 
 
 web_hook = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
